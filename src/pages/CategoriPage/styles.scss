@@ -1,0 +1,24 @@
+.categori {
+    width: 1140px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 90px;
+
+    .filmsItem {
+        width: 415px;
+        display: flex;
+        padding: 0px;
+    }
+    .filmsList {
+        padding: 0px;
+    }
+    .categoriWrapper{
+        padding: 40px 90px;
+        
+    }
+    .nameItem {
+       margin-bottom: 50px;
+    }
+    
+}

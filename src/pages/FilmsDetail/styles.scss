@@ -1,0 +1,63 @@
+.filmsDitailPage {
+   display: flex;
+   width: 1140px;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   background: white;
+   border-radius: 20px;
+   padding: 40px 90px 100px 90px;
+   margin-bottom: 95px;
+   .filmsDetailWrapper {
+      display: flex;
+   }
+   .leftPartImg {
+      display: flex;
+      margin-right: 43px;
+   }
+   .filmImg {
+      width: 229px;
+      height: 340px;
+      filter: drop-shadow(0px 5px 25px rgba(119, 119, 119, 0.08));
+      border-radius: 20px;
+      margin-right: 24px;
+   }
+   .filmBlok {
+      display: flex;
+   }
+   .filmTitle {
+      display: flex;
+   }
+   .title {
+      color: #e59c9c;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 65px;
+   }
+   .descLeft {
+      color: #333333;
+      font-size: 16px;
+      font-weight: 700;
+      width: 120px;
+      margin-bottom: 22px;
+      margin-right: 50px;
+   }
+   .decsRight {
+      color: #333333;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 25px;
+   }
+   .rating {
+      color: #333333;
+      font-size: 27px;
+      font-weight: 800;
+      margin-left: 10px;
+     
+   }
+   .filmStar {
+      background-image: url(../../components/assets/img/star.png);
+      width: 43px;
+      height: 43px;
+      margin-left: auto;
+   }
+}

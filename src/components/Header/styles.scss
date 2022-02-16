@@ -1,0 +1,31 @@
+.MainHeader {
+    padding: 55px 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1140px;
+    margin: auto;
+    
+    
+
+    nav {
+        margin-left: auto;
+        a{
+            margin-left: 60px;
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+           
+                &.linkActive {
+                    color: #E59C9C;
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+                
+        }
+        
+    }
+  
+    
+}

@@ -1,0 +1,31 @@
+.About {
+    margin: auto;
+    background: white;
+    width: 1140px;
+    border-radius: 20px;
+   margin-bottom: 90px;
+    
+
+    .aboutWrapper{
+        display: flex;
+        padding: 40px 90px;
+        align-items: center;
+        
+    }
+    .aboutTitle{
+        font-size: 30px;
+        margin-bottom: 25px;
+        
+    }
+    .aboutDesc{
+        color: #000;
+        font-size: 15px;
+        margin-left: 77px;
+        
+       
+    }
+    .fotoImg {
+        width: 409px;
+        
+    }
+}

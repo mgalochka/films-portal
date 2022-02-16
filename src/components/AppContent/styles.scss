@@ -1,0 +1,15 @@
+.MainWrapper{
+    display: flex;
+    flex-direction:column;
+    height: 100vh;
+
+    main {
+        flex: 1 0 auto;
+        margin: auto;
+    }
+    footer {
+        flex: 0 0 auto;
+        
+    }
+
+}

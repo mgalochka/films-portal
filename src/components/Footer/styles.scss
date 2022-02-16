@@ -1,0 +1,32 @@
+.mainFooter{
+    background: #3A3A3A;
+    display: flex;
+    justify-content: center;
+   
+    .wrapperFooter{
+        width: 1140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 57px 0 56px;
+        
+    }
+    .descFooter {
+        
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .madeBy{
+        font-size: 18px;
+        font-weight: 700;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .autor {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: right;
+    }
+    
+
+}

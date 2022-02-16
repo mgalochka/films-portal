@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  
+  color: white;
+  background: url(./components/assets/img/fon.png), #1B1B1B;
+  
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+a {
+  color: #333D51;
+  text-decoration: none;
+}
