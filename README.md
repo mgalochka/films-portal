@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+Вам необходимо реализовать web приложение на стеке технологий: **React, Redux, Redux Thunk, TypeScript**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Для роутинга используем библиотеку **react-douter-dom@5.3.0**
 
-## Available Scripts
+Для пользователя необходимо предоставить 4 страницы для просмотра в этом приложении: 
 
-In the project directory, you can run:
+# Главная страница(Главная):
 
-### `npm start`
+[https://api.tvmaze.com/search/shows?q=girls](https://api.tvmaze.com/search/shows?q=girls) - запрос 10 объектов по категории
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Пользователю нужно показать главную страницу приложения, на которой будет небольшая презентация этого приложения. Например можно сделать список из 10 разных фильмов
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+На одной карточке фильма необходимо изображать:
 
-### `npm test`
+ 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- картинка,
+- название фильма
+- жанр или если несколько - жанры,
+- страна фильма
 
-### `npm run build`
+# Страница с конкретными фильмами(Фильмы по категории):
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[https://api.tvmaze.com/shows?q=animals](https://api.tvmaze.com/shows?q=animals) - запрос на все фильмы по категории
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+На эту страницу мы можем попасть по кнопке навигации
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+На этой странице в самом начале должна отображаться название категории, в формате: Выбранная категория: 'animals'
 
-### `npm run eject`
+И под ним у нас должен идти список фильмов
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+На карточке с фильмом:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- картинка
+- Название фильма
+- жанр
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Страница с детальной карточкой фильма:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Детальная карточка фильма, на которую мы попадаем при клике на карточку из списка, что с **главной**, что со страницы **Фильмы по категории**
 
-## Learn More
+Информация на этой странице:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Картинка
+- Описание фильма
+- Жанры
+- Язык
+- Страна
+- Рейтинг
+- Год выпуска
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Страница "Поиск"
+
+**Для дипломной работы эта страница не обязательна (делаем ее если хватает сил и времени)**
+
+На эту страницу мы попадаем через навигацию
+
+На этой страницу у н ас есть поле ввода для поиска, с примечанием для пользователя, что ввод названия категории производится только на английском языке, и в качестве примера: example: animals
+
+После того как пользователь ввел название категории в input, он нажимает на кнопку поиск, и внизу появляется список из карточек, такой же как мы делали на странице **фильмы по категории**
+
+Если пользователь ничего не ввел в поиск и не отправил запрос, то у нас висит заглушка под строкой поиск, сообщающая что данных пока нет, введите запрос
+
+Если результат поиска пустой - то заглушка: "Результатов нет, попробуйте что то другое"
+
+# Страница "О Нас":
+
+На эту страницу попадаем через навигацию
+
+На этой страницы необходимо просто описать информацию о нашем приложении. В общем эта страница в вашем распоряжении, почувствуйте себя свободным художником
+
+# Глобальные элементы:
+
+Эти элементы у нас на всех страницах пристуствуют
+
+- Header (Логотип приложения и название) и в нем же навигация что ниже описал
+- Навигация : Главная, Фильмы по категории, О нас, Поиск
+- Footer (Имя, дипломная работа, год)
